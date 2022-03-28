@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: aqua;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 42px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #d047ff;
+}
+
+.pomodoro-app {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 60px;
+  width: 400px;
+  height: 600px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 5rem;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  background: #d047ff;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25),
+    -5px -5px 50px rgba(255, 255, 255, 0.5),
+    inset -5px -5px 50px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 50px rgba(0, 0, 0, 0.4);
+}
+
+.timer {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+
+  color: #ffffff;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease-out, border 0.5s ease-out;
+}
+
+.refresh-btn {
+  width: 46px;
+  height: 46px;
+  color: #d047ff;
+  font-weight: 200;
+
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-btn {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #d047ff;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25),
+    -5px -5px 50px rgba(255, 255, 255, 0.5),
+    inset -5px -5px 50px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 50px rgba(0, 0, 0, 0.4);
+
+  border-radius: 50%;
+}
+
+.refresh-btn:hover {
+  border: 1px solid rgb(208, 71, 255);
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+}
